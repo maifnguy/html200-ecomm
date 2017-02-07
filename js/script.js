@@ -48,3 +48,16 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+
+// Loop
+for (var key in products){
+  if (products.hasOwnProperty){
+    console.log(products[key].name);
+    console.log(products[key].price);
+    console.log(products[key].description);
+  }
+}
+  
+   
+  
