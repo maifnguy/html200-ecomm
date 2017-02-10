@@ -51,13 +51,10 @@ var products = [
 
 
 // Loop
-for (var key in products){
-  if (products.hasOwnProperty){
-    console.log(products[key].name);
-    console.log(products[key].price);
-    console.log(products[key].description);
-  }
+for(var i = 0; i<products.length; i++){
+  console.log(products[i].name);
+  console.log(products[i].description);
+  console.log(products[i].price);
 }
-  
    
   
