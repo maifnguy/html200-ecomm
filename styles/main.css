@@ -29,3 +29,50 @@ h2, h3, h4, h5 {
   }
 
 
+/*  LOGO  */
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.logo:hover h1 {
+  color: #E6E6FA;
+  text-decoration: none;
+}
+.logo:hover {
+  text-decoration: none;
+}
+span {
+  padding: 0.5rem;
+}
+
+
+/*  NAV  */
+nav ul {
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: 2px solid #E6E6E6;
+}
+nav li {
+  display:inline-block;
+  padding: 0.5rem; 
+}
+nav a, nav i {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: darkgrey;
+  text-transform: uppercase;
+}
+
+a.effect:hover, li.cart-info:hover {
+  color: #3092AF;
+  text-decoration: overline;
+  transition: color 0.3s linear 0s;
+  
+}
