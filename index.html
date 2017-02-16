@@ -4,7 +4,7 @@
   <title>Winter Scarves</title>
 
   <meta charset="utf-8">
-
+  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   
@@ -22,71 +22,88 @@
 
 <body>
   <header>
-    <a href="#content" class="offscreen">Skip to content</a>
-    
-    
-    <a class="logo" href="index.html">
-      <h1>Winter Ware</h1><span></span>
-      <img src="images/logo-scarfcat.png" alt="" height="100"><span></span>
-      <h1>Warehouse</h1>
-    </a>
-    
-    <nav>
+    <nav class="effect">
       <ul>
-        <li><a class="effect" href="#">Hats</a></li>
-        <li><a class="effect" href="#">Gloves</a></li>
-        <li><a class="effect" href="#">Scarves</a></li>
-        <li class="cart-info" id="effect">
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
+        <li class="cart-info">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </li>
       </ul>
     </nav>
   </header>
-  
-  
+   
+  <a href="#content" class="offscreen">Skip to content</a>
     
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-8">
-        <section>
-          <div id="content">
-            <h2>Scarves</h2>
-          </div>
-         
-          <div class="item-container">
-            <div class="item">
-              <!-- code template for a single item will go here -->
-              <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
-              <h4>Fringed Plaid Scarf</h4>
-              <p>$18.99</p>
-              <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
-           </div>
-          </div>
-        </div>
-      
-        <div class="col-2">
-          <aside>
-
-            <form>
-              <label>Filter By:
-                <select name="filter">
-                  <option value="">Choose One</option>
-                  <option value="price">Price</option>
-                  <option value="name">Name</option>
-                </select>
-              </label>
-              <input type="submit" value="Sort">
-            </form>
-          </aside>
-        </div>
-        <div class="col-1"></div>
+  <div class="row">
+    <div class="col-sm-12">
+      <a class="logo" href="index.html">
+        <h1>Winter Ware</h1><span></span>
+        <img src="images/logo-scarfcat.png" alt="" height="100"><span></span>
+        <h1>Warehouse</h1>
+      </a>
     </div>
-     
-    
-    
+  </div>
 
+  <div class="row">
+    <div class="col-sm-2">
+      <aside>
+        <form name="products" onsubmit="capture();">
+          <label>Filter By:
+            <select name="filter">
+              <option value="">Choose One</option>
+              <option value="price">Price</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+          <input type="submit" value="Sort">
+        </form>
+      </aside>
+    </div>
 
+    <div class="col-sm-10">
+      <section>
+        <div id="content">
+          <h2>Scarves</h2>
+        </div>
 
+        <div class="item-container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="item">
+                <!-- code template for a single item will go here -->
+                <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
+                <h4>Fringed Plaid Scarf</h4>
+                <p>$18.99</p>
+                <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">  
+              <div class="item">
+                <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
+                <h4>Fringed Plaid Scarf</h4>
+                <p>$18.99</p>
+                <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
+                <h4>Fringed Plaid Scarf</h4>
+                <p>$18.99</p>
+                <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- JS link -->
   <script type="text/javascript" src="js/script.js"></script>
-</body>
+  </body>
 </html>
