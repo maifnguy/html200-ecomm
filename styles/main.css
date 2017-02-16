@@ -1,0 +1,31 @@
+html {
+  font-size: 100%;
+  font-family: 'Maven Pro', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+h1 {
+  font-family: 'Barrio', cursive;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #B7DBE4;
+}
+h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+
+/* A11y */
+.offscreen {
+  position: absolute;
+  left: -1000000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  }
+
+
