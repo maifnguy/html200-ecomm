@@ -23,14 +23,25 @@
 <body>
   <header>
     <nav class="effect">
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="#">Hats</a>
+        </div>
+        
+        <div class="col-sm-3">
+          <a href="#">Gloves</a>
+        </div>
+        
+        <div class="col-sm-3">
+          <a href="#">Scarves</a>
+        </div>
+        
+        <div class="col-sm-3">
+          <p class="cart-info">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
     </nav>
   </header>
    
@@ -41,11 +52,14 @@
       <a class="logo" href="index.html">
         <h1>Winter Ware</h1><span></span>
         <img srcset="images/logo-scarfcat-50w.png 50w, images/logo-scarfcat-75w.png 75w"
-             sizes="(max-width: 1600px) 50px, (min-width: 1601px) 75px" 
+             sizes="(max-width: 1024px) 50px, (min-width: 1025px) 75px" 
              src="images/logo-scarfcat-50w.png"
              alt=""><span></span>
         <h1>Warehouse</h1>
       </a>
+      <div id="content">
+        <h2>Scarves</h2>
+      </div>
     </div>
   </div>
 
@@ -62,51 +76,171 @@
           </label>
           <input type="submit" value="Sort">
         </form>
+        <img src="images/footer-scarfcat-100w.png" alt="tan cat with navy scarf">
       </aside>
     </div>
 
     <div class="col-sm-10">
-      <section>
-        <div id="content">
-          <h2>Scarves</h2>
-        </div>
-
+      <main>
+        
         <div class="item-container">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4"> 
               <div class="item">
-                <!-- code template for a single item will go here -->
-                <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
-                <h4>Fringed Plaid Scarf</h4>
-                <p>$18.99</p>
-                <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+                <img srcset="images/reversible-plaid-200w.jpg 200w, images/reversible-plaid-250w.jpg 250w, images/reversible-plaid-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/reversible-plaid-250w.jpg"
+                     alt="soft reversible red and grey plaid scarf">
+                <h4>Reversible Plaid</h4>
+                <p>$26.99</p>
+                <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
               </div>
             </div>
 
-            <div class="col-sm-4">  
+            <div class="col-sm-4">   
               <div class="item">
-                <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
-                <h4>Fringed Plaid Scarf</h4>
-                <p>$18.99</p>
-                <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+                <img srcset="images/wool-cable-200w.jpg 200w, images/wool-cable-250w.jpg 250w, images/wool-cable-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/wool-cable-250w.jpg"
+                     alt="cream colored wool cable knit scarf">
+                <h4>Wool Cable Knit</h4>
+                <p>$49.99</p>
+                <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4"> 
               <div class="item">
-                <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf in grey" width="200">
-                <h4>Fringed Plaid Scarf</h4>
-                <p>$18.99</p>
-                <p>Details: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+                <img srcset="images/northern-lights-200w.jpg 200w, images/northern-lights-250w.jpg 250w, images/northern-lights-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/northern-lights-250w.jpg"
+                     alt="light colorful cotton scarf">
+                <h4>Northern Lights</h4>
+                <p>$29.99</p>
+                <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
               </div>
             </div>
           </div>
+          
+          
+          <div class="row">
+            <div class="col-sm-4"> 
+              <div class="item">  
+                <img srcset="images/ombre-infinity-200w.jpg 200w, images/ombre-infinity-250w.jpg 250w, images/ombre-infinity-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/ombre-infinity-250w.jpg"
+                     alt="chunky brown and cream infinity scarf">
+                <h4>Ombre Infinity</h4>
+                <p>$11.99</p>
+                <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">   
+              <div class="item">
+                <img srcset="images/fringed-plaid-200w.jpg 200w, images/fringed-plaid-250w.jpg 250w, images/fringed-plaid-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/fringed-plaid-250w.jpg"
+                     alt="fringed plaid scarf in grey">
+                <h4>Fringed Plaid</h4>
+                <p>$18.99</p>
+                <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4"> 
+              <div class="item">
+                <img srcset="images/multi-color-200w.jpg 200w, images/multi-color-250w.jpg 250w, images/multi-color-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/multi-color-250w.jpg"
+                     alt="autumn themed oversized color-block scarf">
+                <h4>Multi Color</h4>
+                <p>$22.99</p>
+                <p>The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="col-sm-4">  
+              <div class="item">  
+                <img srcset="images/etro-200w.jpg 200w, images/etro-250w.jpg 250w, images/etro-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/etro-250w.jpg"
+                     alt="blue paisley silk scarf">
+                <h4>Etro Paisley-Print Silk</h4>
+                <p>$249.99</p>
+                <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">   
+              <div class="item">
+                <img srcset="images/twill-200w.jpg 200w, images/twill-250w.jpg 250w, images/twill-300w.jpg 300w"
+                     sizes="(max-width: 1024px) 200px, (max-width: 1600px) 250px, (min-width: 1601px) 300px"
+                     src="images/twill-250w.jpg"
+                     alt="grey wool scarf with fringe">
+                <h4>Ashby Twill</h4>
+                <p>$70.99</p>
+                <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+          
+          </div>
         </div>
-      </section>
+      </main>
     </div>
   </div>
 
   <!-- JS link -->
   <script type="text/javascript" src="js/script.js"></script>
   </body>
+  
+  <footer>
+    <div class="row" id="footer-container">
+      <div class="col-sm-4"> 
+        <ul class="links">
+          <li><a href="#" target="_blank"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Stores</a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> Newsletter</a></li> 
+        </ul>
+      </div>
+    
+      <div class="col-sm-4"> 
+        <ul class="center">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+        
+      <div class="col-sm-4"> 
+        <div class="center">
+          <p>CONNECT</p><br>
+          <div class="icons"> 
+            <a href="#" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+            <a href="#" target="blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="footer-bottom">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Site Map</a>
+          <p>&copy; Winter Ware Wearhouse, 2017</p>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </html>
