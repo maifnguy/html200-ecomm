@@ -146,7 +146,6 @@ footer {
   display: flex;
   justify-content: space-around;
   line-height: 2.5rem;
-  
 }
 .footer-container a, .footer-container li {
   color: grey;
@@ -198,4 +197,21 @@ footer {
   justify-content: space-around;
   line-height: 2.5rem;
   margin: 0.5rem auto;
+}
+
+
+/*  MEDIA QUERIES  */
+@media print {
+  nav, footer, aside {
+    display: none;
+  }
+  .container, .item-container {
+    width: 100%;
+  }
+  .item {
+    margin: 0.5em;
+    padding: 0.5em;
+    line-height: 1em;
+    border: none;
+  }
 }
