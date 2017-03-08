@@ -178,6 +178,14 @@ form {
   width: 80%;
   padding: 0.5rem;
 }
+button {
+  background-color: #afe4b5;
+  border: 2px inset darkseagreen;
+  color: black;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
 
 /*  FOOTER  */
 footer {
