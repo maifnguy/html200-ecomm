@@ -47,19 +47,52 @@ var products = [
     "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool",
     "imageTitle": "twill.jpg"
   }
-]
+];
 
 
-//// Loop
-//for(var i = 0; i<products.length; i++){
-//  console.log(products[i].name);
-//  console.log(products[i].description);
-//  console.log(products[i].price);
-//}
+// Loop 
+for (var i = 0; i<products.length; i++){
+  console.log(products[i].name);
+  console.log(products[i].description);
+  console.log(products[i].price);
+}
  
   
 // FORM  
 function capture (){
   console.log(document.products.filter.value);
   event.preventDefault(); 
+}
+
+// CART ARRAY 
+function sumPrices(cartArray) {
+   //for loop through arrray, sum value of price attribute for each object
+   var total = 0;
+
+   for(var i = 0; i < cartArray.length; i++) {
+     //console.log(cartArray[i].price);
+     if(cartArray[i].price) {
+       total = total + cartArray[i].price;
+     }
+      console.log(total);
+   }
+}
+   //TODO: print total as html to page next to cart icon
+
+
+// CART
+var cart = [{name: "Reversible Plaid"}, {name: "Wool Cable Knit"}, {name: "Northern Lights"}, {name: "Ombre Infinity"}, {name: "Fringed Plaid"}, {name: "Multi Color"}, {name: "Etro Paisley-Print Silk"}, {name: "Ashby Twill"}];
+
+function addRemove(scarf) {
+  
+  var i = cart.findIndex(function(el){
+    return el.name.toLocaleLowerCase() == scarf
+  });
+  if (i >= 0){
+    cart.splice(i, 1)
+  } else {
+    cart.push({name: scarf})
+  }
+  console.log(cart.length);
+  event.preventDefault;
 }
