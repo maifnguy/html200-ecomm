@@ -95,4 +95,35 @@ function addRemove(scarf) {
   }
   console.log(cart.length);
   event.preventDefault;
+  
 }
+
+// SORT BY PRICE
+function comparePrices (a, b){
+  return a.price - b.price;  
+}
+products.sort(comparePrices)
+
+
+//SORT BY NAME
+function compareNames (a,b){
+  if (a.name.toLowerCase() < b.name.toLowerCase()){
+    return -1;
+  }
+  if (a.name.toLowerCase() > b.name.toLowerCase()){
+    return 1;
+  }
+  return 0;
+};
+products.sort(compareNames)
+
+
+//SORT ONCLICK HANDLER
+function sortby(value) {
+  var selected = document.getElementById("sort").value;
+  if (selected == "price") {
+    console.log(JSON.stringify(products.sort(comparePrices)));}
+  if (selected == "name") {
+    console.log(JSON.stringify(products.sort(compareNames)));}
+  }
+          
