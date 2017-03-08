@@ -55,13 +55,13 @@
       <aside>
         <form name="products" onsubmit="capture();">
           <label>Filter By:
-            <select name="filter">
-              <option value="">Choose One</option>
+            <select name="filter" id="sort">
+              <option value="null">Choose One</option>
               <option value="price">Price</option>
               <option value="name">Name</option>
             </select>
           </label>
-          <input type="submit" value="Sort">
+          <input type="submit" value="sort" onclick="sortby()">
         </form>
       </aside>
 
