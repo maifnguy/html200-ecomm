@@ -77,7 +77,7 @@ function sumPrices(cartArray) {
       console.log(total);
    }
 }
-   //TODO: print total as html to page next to cart icon
+   
 
 
 // CART
@@ -86,17 +86,17 @@ var cart = [{name: "Reversible Plaid"}, {name: "Wool Cable Knit"}, {name: "North
 function addRemove(scarf) {
   
   var i = cart.findIndex(function(el){
-    return el.name.toLocaleLowerCase() == scarf
+    return el.name.toLowerCase() == scarf
   });
   if (i >= 0){
     cart.splice(i, 1)
   } else {
     cart.push({name: scarf})
   }
-  console.log(cart.length);
   event.preventDefault;
-  
 }
+
+
 
 // SORT BY PRICE
 function comparePrices (a, b){
@@ -105,7 +105,7 @@ function comparePrices (a, b){
 products.sort(comparePrices)
 
 
-//SORT BY NAME
+// SORT BY NAME
 function compareNames (a,b){
   if (a.name.toLowerCase() < b.name.toLowerCase()){
     return -1;
@@ -118,12 +118,22 @@ function compareNames (a,b){
 products.sort(compareNames)
 
 
-//SORT ONCLICK HANDLER
+// SORT ONCLICK HANDLER
 function sortby(value) {
   var selected = document.getElementById("sort").value;
   if (selected == "price") {
     console.log(JSON.stringify(products.sort(comparePrices)));}
   if (selected == "name") {
     console.log(JSON.stringify(products.sort(compareNames)));}
+}
+
+
+// PRINT NUMBER OF ITEMS NEXT TO CART 
+window.onclick = function (){ 
+   document.getElementById('cartCount').innerHTML=cart.length;
+ }
+window.onload = function (){ 
+    document.getElementById('cartCount').innerHTML=cart.length;
   }
-          
+
+
