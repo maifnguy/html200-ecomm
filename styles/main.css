@@ -60,7 +60,9 @@ nav ul {
   }
 }
 nav li {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   width: 25%;
 }
@@ -102,7 +104,9 @@ a.active:hover {
 span {
   padding: 0.5rem;
 }
-
+.cart-info {
+  
+}
 
 
 /*  BODY  */
