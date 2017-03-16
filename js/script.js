@@ -55,6 +55,7 @@ for (var i = 0; i<products.length; i++){
   console.log(products[i].name);
   console.log(products[i].description);
   console.log(products[i].price);
+  
 }
  
   
@@ -100,7 +101,8 @@ function addRemove(scarf) {
 
 // SORT BY PRICE
 function comparePrices (a, b){
-  return a.price - b.price;  
+  return a.price - b.price; 
+  event.preventDefault;
 }
 products.sort(comparePrices)
 
@@ -114,17 +116,22 @@ function compareNames (a,b){
     return 1;
   }
   return 0;
+  event.preventDefault;
 };
-products.sort(compareNames)
+//products.sort(compareNames)
 
 
 // SORT ONCLICK HANDLER
 function sortby(value) {
   var selected = document.getElementById("sort").value;
   if (selected == "price") {
+    window.onclick = function () {
+      document.getElementById('container').innerHTML = products;
     console.log(JSON.stringify(products.sort(comparePrices)));}
   if (selected == "name") {
     console.log(JSON.stringify(products.sort(compareNames)));}
+  }
+  event.preventDefault;
 }
 
 
@@ -135,5 +142,7 @@ window.onclick = function (){
 window.onload = function (){ 
     document.getElementById('cartCount').innerHTML=cart.length;
   }
+
+
 
 
